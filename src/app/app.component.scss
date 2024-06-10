@@ -1,0 +1,35 @@
+$headerHeight: 64px;
+
+header {
+  background-color: #004d9a;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  height: $headerHeight;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+.viewport {
+  position: relative;
+  border: 2px solid #d56262;
+  margin: 0 auto;
+  height: calc(100vh - $headerHeight - 200px);
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+@media (min-width: 420px) {
+  .viewport {
+    max-width: 420px;
+    margin-top: 12px;
+    height: calc(100vh - $headerHeight);
+  }
+}
