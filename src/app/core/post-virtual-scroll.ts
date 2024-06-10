@@ -3,7 +3,7 @@ import {
   VirtualScrollStrategy,
 } from '@angular/cdk/scrolling';
 import { distinctUntilChanged, Observable, Subject } from 'rxjs';
-import { Post, PostHeight } from './model/post.model';
+import { Post, PostHeight } from '../model/post.model';
 
 const PaddingAbove = 5;
 const PaddingBelow = 5;

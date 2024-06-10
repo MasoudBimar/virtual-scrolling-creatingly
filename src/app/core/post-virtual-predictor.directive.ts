@@ -1,7 +1,7 @@
 import { VIRTUAL_SCROLL_STRATEGY } from '@angular/cdk/scrolling';
 import { Directive, forwardRef, Input } from '@angular/core';
-import { Post } from './model/post.model';
 import { PostVirtualScrollStrategy } from './post-virtual-scroll';
+import { Post } from '../model/post.model';
 
 @Directive({
   selector: '[appPostVirtualScroll]',

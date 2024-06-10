@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { PostCardComponent } from './post-card/post-card.component';
-import { InfiniteScrollComponent } from './infinite-scroll.component';
-import { PostVirtualScrollDirective } from './post-virtual-predictor.directive';
+import { InfiniteScrollComponent } from './core/infinite-scroll.component';
+import { PostVirtualScrollDirective } from './core/post-virtual-predictor.directive';
 
 @NgModule({
   declarations: [

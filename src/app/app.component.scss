@@ -1,7 +1,6 @@
 $headerHeight: 64px;
 
 header {
-  background-color: #004d9a;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   padding: 20px;
@@ -10,6 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: gray;
 
   h1 {
     font-size: 24px;
@@ -19,7 +19,7 @@ header {
 
 .viewport {
   position: relative;
-  border: 2px solid #d56262;
+  border: 2px solid #004d9a;
   margin: 0 auto;
   height: calc(100vh - $headerHeight - 200px);
   box-sizing: border-box;
@@ -30,6 +30,6 @@ header {
   .viewport {
     max-width: 420px;
     margin-top: 12px;
-    height: calc(100vh - $headerHeight);
+    height: calc(100vh - $headerHeight - 50px);
   }
 }
