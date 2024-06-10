@@ -22,10 +22,10 @@ export class AppComponent {
         this.pageSize = 10;
         this.screenSize = 'Large';
       } else if (screenService.sizes['screen-medium']) {
-        this.pageSize = 6;
+        this.pageSize = 8;
         this.screenSize = 'meduim';
       } else if (screenService.sizes['screen-small']) {
-        this.pageSize = 4;
+        this.pageSize = 5;
         this.screenSize = 'small';
       }
       this.loadPosts(true);
@@ -41,7 +41,7 @@ export class AppComponent {
         let result = (postItems as Post[]).slice(this.pageNumber * this.pageSize, (this.pageNumber + 1) * this.pageSize);
         if (reload) {
           this.pageNumber=0;
-          this.posts$.next([...result, ...this.posts$.value]);
+          this.posts$.next([...result]);
         } else {
           this.posts$.next([...result, ...this.posts$.value]);
           this.pageNumber++;
